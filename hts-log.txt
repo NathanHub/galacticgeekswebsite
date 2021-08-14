@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 14 Aug 2021 16:39:36 at https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html -O1 "C:\Users\saisr\Desktop\Sites\GameWebsite" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/about (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/games (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/team (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/careers (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/contact (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Error: 	"Not Found" (404) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/www.atypicalthemes.com (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/index.html)
+16:40:21	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/fonts/fontawesome-webfont.woff2?v=4.7.0 (from https://www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Video/css/font-awesome.min.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 51 seconds : 73 links scanned, 65 files written (7292711 bytes overall) [6621153 bytes received at 129826 bytes/sec], 956195 bytes transferred using HTTP compression in 17 files, ratio 26%, 14.6 requests per connection
+(6 errors, 1 warnings, 0 messages)
