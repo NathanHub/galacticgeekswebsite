@@ -670,6 +670,7 @@ button {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     text-align: center; 
     padding: 40% 20px 20px 20px;
