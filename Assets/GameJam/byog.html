@@ -44,7 +44,36 @@
             ga("send", "pageview");
             ga("require", "ecommerce");
         }</script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 10, 2021 16:00:00").getTime();
 
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
     <style type="text/css" id="jam_theme">
         :root {
             --itchio_ui_bg: #2c2c2c;
@@ -226,7 +255,7 @@
         <script type="text/javascript">I.page_header = new I.Header('#jam_layout_header_widget_14477');</script><div id="view_jam_page_68701" class="view_jam_page view_jam_base_page page_widget view_jam_default during_voting has_banner">
             <div class="jam_banner_outer"><img src="byog/images/GameJamPoster.png" class="jam_banner " /></div><div class="jam_body">
                 <div class="jam_header_widget"><div class="header_inner"><div class="header_columns"><div class="title_colum"><h1 class="jam_title_header"><a href="https://iacg.co.in/">UNREAL Game Jam 2021</a></h1><div class="jam_host_header">Hosted by <a href="">Tanmay Sharma</a>, <a href="">Arastu Tamboli</a>, <a href="">Sai Hemanth</a> · <a href="">#IACGGamejam2021</a></div></div><div class="stats_container"><div class="stat_box"><a href="byog/entries.html"><div class="stat_value"></div><div class="stat_label"></div></a></div></div></div><div class="header_tabs"><a href="byog.html" data-label="tab_view_jam" class="header_tab active">Overview</a></div></div></div><!--<div class="submitter_outer"><div id="jam_submitter_widget_64107" class="jam_submitter_widget during_voting"><div class="date_data">Submissions open from <span class="date_format" data-format="MMMM Do YYYY [at] h:mm A">2021-10-27 12:30:00</span> to <span class="date_format" data-format="MMMM Do YYYY [at] h:mm A">2021-10-30 13:00:00</span></div><div class="countdown"><span class="countdown_label">Voting ends in</span><div class="times"><div data-name="years" class="time_block"><div class="block_value"></div><div class="block_label">years</div></div><div data-name="months" class="time_block"><div class="block_value"></div><div class="block_label">months</div></div>
-                    <div data-name="days" class="time_block"><div class="block_value"></div><div class="block_label">days</div></div><div data-name="hours" class="time_block"><div class="block_value"></div><div class="block_label">hours</div></div><div data-name="minutes" class="time_block"><div class="block_value"></div><div class="block_label">minutes</div></div><div data-name="seconds" class="time_block"><div class="block_value"></div><div class="block_label">seconds</div></div></div></div><div class="state_action">Submission is closed and voting is now in progress</div></div></div>>--><div class="jam_content user_formatted">
+                    <div class="block_label">days</div></div><div data-name="hours" class="time_block"><div class="block_value"></div><div class="block_label">hours</div></div><div data-name="minutes" class="time_block"><div class="block_value"></div><div class="block_label">minutes</div></div><div data-name="seconds" class="time_block"><div class="block_value"></div><div class="block_label">seconds</div></div></div></div><div class="state_action">Submission is closed and voting is now in progress</div></div></div>>--><div class="jam_content user_formatted">
     <h3 class="text-center">IACG&#x27;s first ever Game Jam&nbsp;!</h3>
     <p>This Game Jam will be a 72-hours jam, starting on the 27th of October and concluding on the 30th of October.&nbsp;<br><br></p>
     <p><strong>What is Unreal Game Jam?</strong></p>
@@ -248,7 +277,10 @@
     <p>You can interpret them in anyway you want. You need to use at least one of them, but you can combine any of&nbsp;them together and use it also.</p>
     <p><strong>Jury<br></strong></p>
     <!--<p><img src="../../img.itch.zone/aW1nLzcyNTQ4OTguanBn/original/PrjQS7.jpg" alt="BYOG 2021 Jury" title="BYOG 2021 Jury" loading="lazy"></p>-->
-    <p><a href="" target="_blank" rel="nofollow noopener">Balakiran Pandramgi</a>&nbsp;(Academic Manager)<br><a href="" target="_blank" rel="nofollow noopener">Sridhar Vodnala</a>&nbsp;(Production Manager at IACG)<br><a href="" target="_blank" rel="nofollow noopener">Vaasu Koduri</a>&nbsp;(Game Development Faculty IACG)<br><a href="" target="_blank" rel="nofollow noopener">Arastu Tamboli</a>&nbsp;(Game Programmer, IACG Studios)<br><a href="" target="_blank" rel="nofollow noopener">Tanmay Sharma</a>&nbsp;(Game Designer, IACG Studios)<br><a href="" target="_blank" rel="nofollow noopener">Sai Hemanth S</a>&nbsp;(Programming Nerd, IACG Studios)<br><br></p>
+    <p><a href="" target="_blank" rel="nofollow noopener">Arun</a>&nbsp;(Art director, Gameshastra)<br><a href="" target="_blank" rel="nofollow noopener">Vishnu</a>&nbsp;(Head of Production, Gamitronics)<br><a href="" target="_blank" rel="nofollow noopener">Vamsi</a>&nbsp;(Lead Game Designer, GoLive Games)<br><br></p>
+    <p><strong>Support<br></strong></p>
+    <!--<p><img src="../../img.itch.zone/aW1nLzcyNTQ4OTguanBn/original/PrjQS7.jpg" alt="BYOG 2021 Jury" title="BYOG 2021 Jury" loading="lazy"></p>-->
+    <p><a href="" target="_blank" rel="nofollow noopener">Balakiran Pandramgi</a>&nbsp;(Academic Manager)<br><a href="" target="_blank" rel="nofollow noopener">Sridhar Vodnala</a>&nbsp;(Production Manager at IACG)<br><a href="" target="_blank" rel="nofollow noopener">Vaasu Koduri</a>&nbsp;(Game Development Faculty IACG)<br><br></p>
     <p>
         <strong>Judging Criteria</strong><br>
     </p>
@@ -257,51 +289,6 @@
 
     <br />
     <h3 class="text-center">Register for <a href="https://forms.gle/YjRSFpi5nY8GiJhH9" target="_blank" style="font-size: inherit" rel="nofollow noopener">Unreal Game Jam 2021</a>!</h3><br /><br />
-    <!--<p><strong>Team Up!</strong></p>
-    <p>Come over to the <a href="https://discord.com/invite/vcnygb2" target="_blank" rel="nofollow noopener">Discord</a>&nbsp;to find jammers who would want to team up!<br><br></p>
-    <p><strong>Our sponsors and supporters</strong></p>
-    <p>This jam would not be possible without the support of the <a href="https://indiagdc.com/2021/" target="_blank" rel="nofollow noopener">IndiaGDC conference</a>. If you haven&#x27;t registered for India&#x27;s oldest and biggest game developer focused conference, <a href="https://indiagdc.com/2021/" target="_blank" rel="nofollow noopener">then please do so!</a></p>
-    <p>[Other Sponsors TBA]</p>
-    <p>---</p>
-    <p><strong>FAQ</strong></p>
-    <p>
-        #&nbsp;Do we have to register as a team or as an individual for BYOG?
-        <br>You need to have a valid Itch.io ID and should have signed up for the jam before the submission is due. Only one individual in the team needs to have joined the jam. It will be useful to have other members on itch.io as you can add them to your submitted game as contributors.&nbsp;
-    </p>
-    <p>
-        # Do I need to be on the discord?
-        <br>All communication during the jam will be via the discord channel #byog on&nbsp;<a href="https://discord.com/invite/vcnygb2" target="_blank" rel="nofollow noopener">discord.gamedev.in</a>. So yes, you need to be there.
-    </p>
-    <p>
-        #&nbsp;What is the maximum number of members that I can have in my team?
-        <br>You can participate solo or in a team, maximum of 5 members in it.
-    </p>
-    <p>
-        #&nbsp;Can I submit multiple entries to the jam?
-        <br>Yes, you can submit as many entries to the jam as you want.
-    </p>
-    <p># What platforms are allowed for the submission?&nbsp;<br>We prefer Web, Android, IOS, Windows, Mac and Linux as these will be easily available with Jury. But if you want to build for any other platform, do drop us a message on discord and we will see if we can get that platform to jury.&nbsp;</p>
-    <p>
-        # Can I use assets from asset stores or code or other assets I&#x27;ve created before?
-        <br>Yes, you can use open source art or previously created assets (art, music and code etc) for this jam or assets from the many asset stores out there. You can use anything that you legally have the right to use to make a game for this jam.
-    </p>
-    <p>
-        #&nbsp;How will you let us know if we have won?
-        <br>You are required to share your discord username along with your submission, we will reach out to you via #byog on&nbsp;<a href="https://discord.com/invite/vcnygb2" target="_blank" rel="nofollow noopener">discord.gamedev.in</a>&nbsp;on discord.
-    </p>
-    <p>
-        #&nbsp;What is the last date for joining the BYOG?
-        <br>We recommend joining the jam before it starts! But you can join the jam anytime before it ends on October 24st 2021 at 6:00 PM
-    </p>
-    <p>
-        #&nbsp;Will we have public voting this year?
-        <br>There will be no public voting this year! The jury will play and evaluate the game in order to find out the winners.<br>
-    </p>
-    <p>#&nbsp;Can I see games made in previous BYOG?&nbsp;<br><span></span>BYOG 2018 submissions and results can be viewed here -&nbsp;<a href="byog-2018.html" target="_blank">https://itch.io/jam/byog-2018</a><br>BYOG 2019 submissions and results can be viewed here -&nbsp;<a href="byog-2019.html" style="font-size: inherit" target="_blank">https://itch.io/jam/byog-2019<br></a>BYOG 2020 submissions and results can be viewed here -&nbsp;<a href="byog-2020.html" target="_blank" style="font-size: inherit">https://itch.io/jam/byog-2020</a><span></span><span></span></p>
-    <p>---<br><br><strong>Legal Bit</strong></p>
-    <ul><li>Anything you make during the BYOG is your property. BYOG claims no rights or ownership of your game.</li><li>Any game submitted to the BYOG may be used for promotional purpose by IndiaGDC, BYOG and gamedev.in without your express permission</li><li>A significant amount of game must be made during the jam, but you can use whatever art and audio assets and code you have the legal right to use</li><li>Anyone can participate in this jam, but you need to be from Afghanistan, Bangladesh, Bhutan, India, the Maldives, Nepal, Pakistan or Sri Lanka to be eligible to win prizes.</li><li>No explicitly pornographic, tasteless, Discriminatory,&nbsp; disrespectful content or hate speech</li></ul>
-    <p><strong>Credits</strong></p>
-    <p>This jam is organized by&nbsp;<a href="http://www.chiragchopra.com/" target="_blank" rel="nofollow noopener">Chirag Chopra</a>, <a href="https://www.linkedin.com/in/vivekjha92/" target="_blank" rel="nofollow noopener">Vivek Jha</a>, <a href="http://yadurajiv.com/" target="_blank" rel="nofollow noopener">Yadu Rajiv</a> and the team at <a href="https://gamedev.in/" target="_blank" rel="nofollow noopener">gamedev.in</a>&nbsp;as part of&nbsp;<a href="https://indiagdc.com/2021" target="_blank" rel="nofollow noopener">India GDC 2021</a>.&nbsp;&nbsp;<br></p>-->
 </div>
             </div>
             <script id="add_game_to_jam_lightbox_tpl" type="text/template">
